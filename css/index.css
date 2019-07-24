@@ -206,16 +206,16 @@ nav {
   margin-top: 15px;
 }
 
-#nav-links-div {
+.nav-links {
   width: 70%;
 }
 
-#nav-links-div a {
+.nav-links a {
   text-decoration: none;
   color: #979797;
 }
 
-#nav-links-div a:hover {
+.nav-links a:hover {
   color: #000000;
 }
 
@@ -352,11 +352,11 @@ li {
 
   /***HEADER***/
 
-  #nav-header {
+  .nav-header {
     flex-direction: column-reverse;
   }
 
-  #nav-links-div {
+  .nav-links {
     width: 100%;
     margin-top: 35px;
     justify-content: space-around;
@@ -397,6 +397,37 @@ li {
   .spv {
     width: 30%;
   }
+
+  /***SERVICES.HTML***/
+
+  #services-img-div {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  #services-img,
+  #services-section,
+  #tech-div,
+  #facts-sec {
+    width: 95%;
+  }
+
+  #tech-div section {
+    width: 48%;
+  }
+
+  #tech-div section button,
+  #services-info-img {
+    width: 100%;
+  }
+
+  #facts-sec {
+    margin: 0 auto;
+  }
+
+  #facts-sec div {
+    width: 50%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -408,23 +439,23 @@ li {
 
   /***HEADER***/
 
-  #nav-links-div {
+  .nav-links {
     flex-direction: column;
   }
 
   #nav-img-div,
-  #nav-links-div a {
+  .nav-links a {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid black;
   }
 
   #nav-img-div,
-  #nav-links-div {
+  .nav-links {
     margin-top: 0;
   }
 
-  #nav-links-div a {
+  .nav-links a {
     padding: 20px 0;
     font-size: 20px;
   }
@@ -459,5 +490,36 @@ li {
   .spv {
     width: 95%;
     margin: 30px 0 30px 15px;
+  }
+
+  /***SERVICES.HTML***/
+
+  #services-section h1,
+  #tech-div section h2,
+  #facts-sec {
+    text-align: center;
+  }
+
+  #tech-div section {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #tech-div section button {
+    margin-top: 15px;
+  }
+
+  #services-info-img {
+    display: none;
+  }
+
+  #facts-sec div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #services-copyright p {
+    font-size: 14px;
   }
 }
