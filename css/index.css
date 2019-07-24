@@ -206,12 +206,16 @@ nav {
   margin-top: 15px;
 }
 
-nav a {
+#nav-links-div {
+  width: 70%;
+}
+
+#nav-links-div a {
   text-decoration: none;
   color: #979797;
 }
 
-nav a:hover {
+#nav-links-div a:hover {
   color: #000000;
 }
 
@@ -333,90 +337,127 @@ li {
 
 /********** MEDIA QUERIES **********/
 
-@media only screen and (max-width: 800px) {
-  /*** General ***/
+/***** 800px *****/
 
-  .display-flex {
-    flex-flow: column nowrap;
-  }
-
-  .start-align {
-    align-items: center;
-  }
+@media (max-width: 800px) {
+  /***GENERAL***/
 
   body {
     width: 100%;
   }
 
-  nav {
-    margin-top: 0;
+  hr {
+    width: 95%;
   }
 
-  nav a {
-    padding-top: 15px;
+  /***HEADER***/
+
+  #nav-header {
+    flex-direction: column-reverse;
   }
 
-  /*** Innovation (Index) ***/
+  #nav-links-div {
+    width: 100%;
+    margin-top: 35px;
+    justify-content: space-around;
+  }
+
+  #nav-img-div {
+    margin-top: 10px;
+  }
+
+  /***INDEX.HTML***/
 
   #innovation {
-    margin-bottom: 40px;
+    flex-direction: column;
+    margin-bottom: 60px;
   }
 
   #innovation h1 {
-    font-size: 60px;
+    font-size: 72px;
+  }
+
+  #innovation button {
+    padding: 5px 50px;
   }
 
   #code-snippet {
-    width: 60%;
-    margin-top: 15px;
+    display: none;
   }
 
-  /*** Everything Else (Index) ***/
+  .features-about {
+    width: 45%;
+  }
 
-  hr,
   #middle-img,
-  .features-about,
-  .spv {
-    width: 90%;
-  }
-
-  section.features-about h2,
-  section.spv h2,
   #contact {
+    width: 95%;
+  }
+
+  .spv {
+    width: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  /***GENERAL***/
+
+  hr {
+    border: 1px solid black;
+  }
+
+  /***HEADER***/
+
+  #nav-links-div {
+    flex-direction: column;
+  }
+
+  #nav-img-div,
+  #nav-links-div a {
+    width: 100%;
     text-align: center;
+    border-bottom: 1px solid black;
   }
 
-  /*** Services (Services) ***/
-
-  #services-img-div {
-    text-align: center;
-    margin-top: 40px;
+  #nav-img-div,
+  #nav-links-div {
+    margin-top: 0;
   }
 
-  #services-img,
-  #services-section {
-    width: 90%;
+  #nav-links-div a {
+    padding: 20px 0;
+    font-size: 20px;
   }
 
-  /*** Everything Else (Services) ***/
-
-  #tech-div section,
-  #tech-div button,
-  #facts-sec div,
-  #services-info-img {
-    width: 90%;
-    text-align: center;
+  #nav-img-div {
+    padding-bottom: 15px;
   }
 
-  #facts-sec div {
-    margin-bottom: 0px;
+  /***INDEX.HTML***/
+
+  #innovation div button {
+    margin-top: 15px;
+    padding: 5px 40px;
   }
 
-  #facts-div {
-    height: auto;
+  #features-div,
+  #spv-div {
+    flex-direction: column;
   }
 
-  #services-copyright {
-    margin-top: 40px;
+  .features-about {
+    width: 95%;
+    margin-left: 15px;
+    margin-top: 50px;
+  }
+
+  #middle-img {
+    margin-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .spv {
+    width: 95%;
+    margin: 30px 0 30px 15px;
   }
 }
