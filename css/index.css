@@ -1,3 +1,525 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/********** GENERAL **********/
+
+.display-flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.between-justify {
+  justify-content: space-between;
+}
+
+.evenly-justify {
+  justify-content: space-evenly;
+}
+
+.around-justify {
+  justify-content: space-around;
+}
+
+.start-align {
+  align-items: flex-start;
+}
+
+p,
+#innovation button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+hr {
+  background-color: #000000;
+}
+
+body {
+  width: 876px;
+  margin: 0 auto;
+}
+
+/********** HEADER **********/
+
+nav {
+  margin-top: 15px;
+}
+
+.nav-links {
+  width: 70%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #979797;
+}
+
+.nav-links a:hover {
+  color: #000000;
+}
+
+.logo {
+  padding: 5px;
+}
+
+/********** INNOVATION (INDEX) **********/
+
+#innovation {
+  margin: 35px auto 70px auto;
+}
+
+#innovation h1 {
+  font-size: 80px;
+  padding-top: 35px;
+}
+
+#code-snippet {
+  padding-top: 35px;
+}
+
+#innovation button {
+  background: #ffffff;
+  border: 1px solid #000000;
+  padding: 7px 35px;
+  cursor: pointer;
+}
+
+/********** FEATURES AND ABOUT (INDEX) **********/
+
+.features-about {
+  width: 438px;
+  margin-top: 30px;
+}
+
+/********** MIDDLE IMAGE (INDEX) **********/
+
+#middle-img {
+  padding: 40px 0;
+}
+
+/********** SERVICES, PRODUCT, AND VISION (INDEX) **********/
+
+.spv {
+  width: 290px;
+  margin-bottom: 40px;
+}
+
+/********** FOOTER (INDEX) **********/
+
+#contact {
+  text-align: left;
+  margin: 50px auto 40px auto;
+  line-height: 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+/********** SERVICES (SERVICES) **********/
+
+#services-img {
+  margin-top: 15px;
+}
+
+#services-section {
+  margin: 30px auto 40px auto;
+  font-size: 26px;
+}
+
+/********** TECH BOXES (SERVICES) **********/
+
+#tech-div {
+  margin: 40px auto 0 auto;
+}
+
+#tech-div section {
+  width: 422px;
+  padding: 20px;
+  margin-bottom: 35px;
+  border: 1px solid #000000;
+  background-color: #f0f0f0;
+}
+
+#tech-div section button {
+  background: #ffffff;
+  padding: 10px 35px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/********** FACTS (SERVICES) **********/
+
+#facts-sec div {
+  width: 422px;
+  margin: 30px auto 70px auto;
+}
+
+#facts-div {
+  height: 300px;
+}
+
+#facts-div p {
+  padding: 0 20px 10px 0;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.bottom-15 {
+  padding-bottom: 17px;
+}
+
+/********** MEDIA QUERIES **********/
+
+/***** 800px *****/
+
+@media (max-width: 800px) {
+  /***GENERAL***/
+
+  body {
+    width: 100%;
+  }
+
+  hr {
+    width: 95%;
+  }
+
+  /***HEADER***/
+
+  .nav-header {
+    flex-direction: column-reverse;
+  }
+
+  .nav-links {
+    width: 100%;
+    margin-top: 35px;
+    justify-content: space-around;
+  }
+
+  #nav-img-div {
+    margin-top: 10px;
+  }
+
+  /***INDEX.HTML***/
+
+  #innovation {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  #innovation h1 {
+    font-size: 72px;
+  }
+
+  #innovation button {
+    padding: 5px 50px;
+  }
+
+  #code-snippet {
+    display: none;
+  }
+
+  .features-about {
+    width: 45%;
+  }
+
+  #middle-img,
+  #contact {
+    width: 95%;
+  }
+
+  .spv {
+    width: 30%;
+  }
+
+  /***SERVICES.HTML***/
+
+  #services-img-div {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  #services-img,
+  #services-section,
+  #tech-div,
+  #facts-sec {
+    width: 95%;
+  }
+
+  #tech-div section {
+    width: 48%;
+  }
+
+  #tech-div section button,
+  #services-info-img {
+    width: 100%;
+  }
+
+  #facts-sec {
+    margin: 0 auto;
+  }
+
+  #facts-sec div {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  /***GENERAL***/
+
+  hr {
+    border: 1px solid black;
+  }
+
+  /***HEADER***/
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  #nav-img-div,
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+
+  #nav-img-div,
+  .nav-links {
+    margin-top: 0;
+  }
+
+  .nav-links a {
+    padding: 20px 0;
+    font-size: 20px;
+  }
+
+  #nav-img-div {
+    padding-bottom: 15px;
+  }
+
+  /***INDEX.HTML***/
+
+  #innovation div button {
+    margin-top: 15px;
+    padding: 5px 40px;
+  }
+
+  #features-div,
+  #spv-div {
+    flex-direction: column;
+  }
+
+  .features-about {
+    width: 95%;
+    margin-left: 15px;
+    margin-top: 50px;
+  }
+
+  #middle-img {
+    margin-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .spv {
+    width: 95%;
+    margin: 30px 0 30px 15px;
+  }
+
+  /***SERVICES.HTML***/
+
+  #services-section h1,
+  #tech-div section h2,
+  #facts-sec {
+    text-align: center;
+  }
+
+  #tech-div section {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #tech-div section button {
+    margin-top: 15px;
+  }
+
+  #services-info-img {
+    display: none;
+  }
+
+  #facts-sec div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #services-copyright p {
+    font-size: 14px;
+  }
+}
